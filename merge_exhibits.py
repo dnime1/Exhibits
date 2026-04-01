@@ -150,7 +150,7 @@ n = 0
 for (x1, y1, x2, y2, tgt) in link_rects:
     if tgt >= len(pdf.pages): continue
     dest = Array([
-        pdf.pages[tgt], Name.XYZ,
+        pdf.pages[tgt].obj, Name.XYZ,
         pikepdf.Object.parse(b"null"),
         pikepdf.Object.parse(b"null"),
         pikepdf.Object.parse(b"0"),
